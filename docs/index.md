@@ -1,37 +1,104 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
 
-You can use the [editor on GitHub](https://github.com/Banestet/Ebook-Criminalistica/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>EBOOK </title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+    <!--Adobe Edge Runtime-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script type="text/javascript" charset="utf-8" src="js/index_edgePreload.js"></script>
+    <style>
+        .edgeLoad-EDGE-688359859 {
+            visibility: hidden;
+        }
+    </style>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+    <!-- fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Banestet/Ebook-Criminalistica/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-### Support or Contact
+    <!--Adobe Edge Runtime End-->
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+        /* preloader */
+        
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url(images/wood.jpg);
+            z-index: 100;
+        }
+        
+        #loader {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            left: 35%;
+            top: 20%;
+            background: url(images/ajax-loader.gif) no-repeat center 0;
+            background-size: 100% 100%;
+            margin: -50px 0 0 -50px;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/IconoUDLA.ico">
+</head>
+<!-- color de fondo del div de arriba   background="images/wood.jpg" -->
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<body style="margin:0;padding:0; overflow: hidden; " background="images/wood.jpg">
+
+
+
+    <div id="Stage" class="EDGE-688359859">
+        <div id="preloader">
+            <div id="loader" align='center'><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <h1 class="cargandotitulo">CARGANDO PAGINAS DEL EBOOK</h1>
+                <img class="cargando" src="/images/cargando.gif" alt="Funny image">
+                <img class="imagenUdla" src="/images/Facultad de Derecho BLANCO - Vertical.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <iframe style="width: 100%; height: 100%;" src="../indexb.html " frameborder="0 "></iframe>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#preloader').fadeOut('slow');
+            $('body').css({
+                'overflow': 'visible'
+            });
+        })
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
