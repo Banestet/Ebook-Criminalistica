@@ -1,0 +1,1678 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: transparent;
+}
+
+h1 {
+    color: #2F1B0C;
+    font-size: 40px;
+    margin: 20px 0px 0px 20px;
+}
+
+span.reference {
+    font-family: Arial;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span.reference a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+span.reference a:hover {
+    color: #ddd;
+}
+
+
+/* Booklet jQuery Plugin Style*/
+
+.booklet {
+    -moz-box-shadow: 0px 0px 1px #fff;
+    -webkit-box-shadow: 0px 0px 1px #fff;
+    box-shadow: 0px 0px 1px #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.booklet .b-wrap-left {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.booklet .b-wrap-right {
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.booklet .b-counter {
+    bottom: 10px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0 0;
+    background: transparent;
+    -moz-box-shadow: 0px -1px 1px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0px -1px 1px rgba(255, 255, 255, 0);
+    box-shadow: 0px -1px 1px rgba(255, 255, 255, 0);
+    opacity: 0.8;
+}
+
+.book_wrapper {
+    margin: 0 auto;
+    padding-top: 27px;
+    width: 1859px;
+    height: 831px;
+    position: relative;
+    top: -28px;
+    background: transparent url(../images/bg2.png) no-repeat 9px 27px;
+}
+
+.book_wrapper h1 {
+    color: #13386a;
+    margin: 5px 5px 5px 15px;
+    font-size: 30px;
+    background: transparent url(../images/h1.png) no-repeat bottom left;
+    padding-bottom: 7px;
+}
+
+.book_wrapper h2 {
+    color: #00f;
+    font-size: 26px;
+    margin: 5px 5px 5px 15px;
+}
+
+.book_wrapper p {
+    color: #000;
+    font-size: 23px;
+    margin: 5px 5px 5px 15px;
+}
+
+.book_wrapper a.article {
+    background: transparent url(../images/circle.png) no-repeat 60% 0px;
+    display: block;
+    width: 150px;
+    height: 48px;
+    text-decoration: none;
+    outline: none;
+    font-size: 22px;
+    color: #00f;
+    float: left;
+    line-height: 48px;
+    padding-left: 97px;
+}
+
+.book_wrapper a.instructivo {
+    background: transparent url(../images/circle.png) no-repeat 70% 0px;
+    display: block;
+    width: 140px;
+    height: 48px;
+    text-decoration: none;
+    outline: none;
+    font-size: 22px;
+    color: #00f;
+    float: center;
+    line-height: 48px;
+    padding-left: 47px;
+}
+
+.book_wrapper a.demo {
+    background: transparent url(../images/circle.png) no-repeat 70% 0px;
+    display: block;
+    width: 300px;
+    height: 48px;
+    text-decoration: none;
+    outline: none;
+    font-size: 20px;
+    color: #00f;
+    float: right;
+    line-height: 48px;
+    padding-left: 120px;
+}
+
+.book_wrapper a.demo {
+    margin-left: 30px;
+}
+
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover {
+    background-position: 70% -48px;
+    color: #13386a;
+}
+
+.book_wrapper img {
+    margin: 30px 0px 5px 15px;
+    padding: 4px;
+    border: 0px solid #ddd;
+    -moz-box-shadow: 1px 1px 1px #fff;
+    -webkit-box-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 1px #fff;
+}
+
+.booklet .b-wrap-right img {
+    border: 0px solid #E6E3C2;
+}
+
+a#next_page_button,
+a#prev_page_button {
+    display: none;
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: -20px;
+    top: 50%;
+    background: transparent url(../images/buttons.png) no-repeat 0px -40px;
+}
+
+a#prev_page_button {
+    left: -30px;
+}
+
+a#next_page_button {
+    right: -30px;
+    background-position: -41px -40px;
+}
+
+a#next_page_button:hover {
+    background-position: -41px 0px;
+}
+
+a#prev_page_button:hover {
+    background-position: 0px 0px;
+}
+
+.loading {
+    width: 160px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    right: 135px;
+    line-height: 56px;
+    color: #fff;
+    padding-left: 60px;
+    font-size: 15px;
+    background: #000 url(../images/ajax-loader.gif) no-repeat 10px 50%;
+    opacity: 0.7;
+    z-index: 9999;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+
+/* TEXTOS DE TODAS LAS PAGINAS POR SEPARADOS*/
+
+.portada {
+    margin: 0;
+    padding-top: 0px;
+    width: 815px;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    object-position: center center;
+}
+
+.texto-encima {
+    position: absolute;
+    left: 20%;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px #fff;
+    font-size: 50px;
+    top: 30%;
+}
+
+.texto-encima-actividad {
+    position: absolute;
+    left: 2%;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px #fff;
+    font-size: 50px;
+    top: 15%;
+}
+
+@supports(object-fit: cover) {
+    .portada img {
+        height: 100%;
+        object-position: center center;
+    }
+}
+
+
+/* CARGADOR*/
+
+.cargando {
+    background-color: rgba(0, 255, 98, 0);
+    position: absolute;
+    top: 350px;
+    width: 150%;
+    left: 110px;
+}
+
+.cargandotitulo {
+    position: absolute;
+    top: 100px;
+    left: -10px;
+    width: 400px;
+    font-family: 'Kufam', cursive;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.imagenUdla {
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    left: 80px;
+}
+
+
+/* pagina 4*/
+
+.INTRODUCCION {
+    position: absolute;
+    left: 80px;
+    top: -180PX;
+    color: #0a4459;
+    font-size: 45px;
+    font-family: 'Kufam', cursive;
+}
+
+.videopag4 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: -10px;
+    top: -40px;
+    width: 550px;
+    height: 310px;
+}
+
+.contpag4 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: absolute;
+    width: 500px;
+    top: 290px;
+    margin: 4px;
+    left: 10px;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+
+/*pagina 3*/
+
+.TITULO_TABLA_CONTENIDO {
+    width: 400px;
+    position: absolute;
+    right: 20px;
+    top: -220px;
+    color: #0a4459;
+    font-size: 60px;
+    font-family: 'Kufam', cursive;
+    /* text-shadow: 4px 3px 5px #126786; */
+}
+
+.cont {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    top: -50px;
+    margin: 4px;
+    left: 5%;
+    font-size: 27px;
+    font-family: 'Buda', cursive;
+}
+
+
+/* pagina 1*/
+
+.TITULOPAG2 {
+    background-color: rgba(0, 128, 128, 0);
+    width: 600PX;
+    position: relative;
+    left: 60px;
+    top: -140px;
+    color: #0a4459;
+    font-size: 85px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+}
+
+.SUBTITULOPAG2 {
+    color: rgba(0, 0, 0, 0.733);
+    text-align: justify;
+    position: relative;
+    top: -100px;
+    left: 210px;
+    font-size: 33px;
+    margin: 0px;
+    font-family: 'Buda', cursive;
+}
+
+.SUBTITULO2PAG2 {
+    color: rgba(0, 0, 0, 0.733);
+    text-align: justify;
+    position: relative;
+    top: -110px;
+    left: 225px;
+    font-size: 33px;
+    margin: 0px;
+    font-family: 'Buda', cursive;
+}
+
+
+/* pagina 2*/
+
+.cordinador {
+    width: 600PX;
+    position: relative;
+    left: -80px;
+    top: -180px;
+    color: #0a4459;
+    font-size: 30px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cordinadorn {
+    background-color: rgba(0, 128, 128, 0);
+    position: relative;
+    left: -80px;
+    top: -210px;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 30px;
+}
+
+.subdirector {
+    background-color: rgba(0, 128, 128, 0);
+    width: 600PX;
+    position: relative;
+    right: -140px;
+    top: -210px;
+    color: #0a4459;
+    font-size: 30px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subdirectorn {
+    background-color: rgba(0, 128, 128, 0);
+    position: relative;
+    right: -140px;
+    top: -240px;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 50px;
+}
+
+.autores {
+    background-color: rgba(0, 128, 128, 0);
+    width: 600PX;
+    position: relative;
+    left: -220px;
+    top: -280px;
+    color: #0a4459;
+    font-size: 30px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.autoresn {
+    background-color: rgba(0, 128, 128, 0);
+    position: relative;
+    left: -230px;
+    top: -300px;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Buda', cursive;
+    margin: 0;
+}
+
+.estilo {
+    background-color: rgba(0, 255, 255, 0);
+    width: 600PX;
+    position: relative;
+    right: -80px;
+    top: -320px;
+    color: #0a4459;
+    font-size: 30px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.estilon {
+    background-color: rgba(0, 128, 128, 0);
+    position: relative;
+    right: -100px;
+    top: -340px;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Buda', cursive;
+    margin: 0;
+}
+
+.diseño {
+    width: 600PX;
+    position: absolute;
+    left: -210px;
+    top: 17%;
+    color: #0a4459;
+    font-size: 30px;
+    font-family: 'Kufam', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.diseñon {
+    background-color: rgba(13, 233, 233, 0);
+    position: relative;
+    left: -210px;
+    top: -270px;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Buda', cursive;
+    margin: 0;
+}
+
+.licencia {
+    background-color: rgba(218, 218, 218, 0);
+    position: absolute;
+    left: -140px;
+    width: 400px;
+    height: 220px;
+    top: 32%;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+    margin: 0;
+    text-align: justify;
+}
+
+.logolicencia {
+    position: absolute;
+    top: 46%;
+    left: 2%;
+    width: 100px !important;
+}
+
+
+/*pagina 5*/
+
+.titulopag5 {
+    position: relative;
+    left: -10%;
+    top: -220px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+}
+
+.videopag5 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 20%;
+    top: 150px;
+    width: 450px;
+    height: 250px;
+}
+
+.sbtitulopag5 {
+    position: absolute;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -25%;
+    left: -10%;
+}
+
+.notaspag5 {
+    background-color: rgba(255, 0, 0, 0);
+    width: 390px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    position: relative;
+    top: -160px;
+    left: -20%;
+    font-size: 23px;
+    margin: 2px;
+    font-family: 'Buda', cursive;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+
+/*pagina 6*/
+
+.titulopag6 {
+    position: relative;
+    left: -17%;
+    top: -200px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-top: 20px;
+}
+
+.contpag6 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 720px;
+    top: -180px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.sbtitulopag6-2 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -150px;
+    left: -20%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.contpag6-2 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 720px;
+    top: -150px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.audiopag6 {
+    position: absolute;
+    top: 360px;
+    left: -15%;
+}
+
+
+/*pagina 7*/
+
+.sbtitulopag7 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -200px;
+    text-align: center;
+    left: -20%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.contpag7 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 720px;
+    top: -180px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.audiopag7 {
+    position: absolute;
+    top: 380px;
+    left: 15%;
+}
+
+
+/*pagina 8*/
+
+.titulopag8 {
+    position: relative;
+    left: -17%;
+    top: -180px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-top: 0px;
+}
+
+.contpag8 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 720px;
+    top: -180px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    padding-top: 40px;
+}
+
+.ampliar {
+    color: #0a4459;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+
+/* pagina 9*/
+
+.titulopag9 {
+    position: relative;
+    left: -17%;
+    top: -190px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 20px;
+}
+
+.contpag9 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 770px;
+    top: -190px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    padding-bottom: 30px;
+}
+
+
+/* pagina 16*/
+
+.titulopag16 {
+    position: relative;
+    left: -17%;
+    top: -190px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 30px;
+}
+
+.icon {
+    position: absolute;
+    top: -40px;
+    left: auto;
+    width: 100px !important;
+    height: 100px !important;
+    right: 50px;
+}
+
+.iconPAG9 {
+    position: absolute;
+    top: 57%;
+    left: 42%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG46a {
+    position: absolute;
+    top: -1%;
+    left: 10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG47a {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG47b {
+    position: absolute;
+    top: 54%;
+    left: 74%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG46b {
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG46c {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG54 {
+    position: absolute;
+    top: 58%;
+    left: 60%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG55 {
+    position: absolute;
+    top: 16%;
+    left: 73%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG55b {
+    position: absolute;
+    top: 62%;
+    left: 6%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG59 {
+    position: absolute;
+    top: -8%;
+    left: 12%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG60 {
+    position: absolute;
+    top: -50px;
+    left: 63%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG59b {
+    position: absolute;
+    top: 59%;
+    left: 0%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG56 {
+    position: absolute;
+    top: 53%;
+    left: 19%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG56b {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG17 {
+    position: absolute;
+    top: 21%;
+    left: 55%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG18 {
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG63 {
+    position: absolute;
+    top: 21%;
+    left: -1%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG63b {
+    position: absolute;
+    top: 57%;
+    left: -1%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG64 {
+    position: absolute;
+    top: 4%;
+    left: 28%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG64b {
+    position: absolute;
+    top: 27%;
+    left: 74%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG64c {
+    position: absolute;
+    top: 59%;
+    left: 28%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.icon2 {
+    position: absolute;
+    top: 90px;
+    width: 80px !important;
+    height: 80px !important;
+    right: 60px;
+}
+
+.icon3 {
+    position: absolute;
+    top: 220px;
+    width: 80px !important;
+    height: 80px !important;
+    right: 60px;
+}
+
+.iconPAG61 {
+    position: absolute;
+    top: 59%;
+    left: 2%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG65 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG66 {
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG66b {
+    position: absolute;
+    top: 85%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG69 {
+    position: absolute;
+    top: 54%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG69b {
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG69c {
+    position: absolute;
+    top: 76%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.iconPAG69d {
+    position: absolute;
+    top: 87%;
+    left: -10%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+
+/* pagian 17*/
+
+.titulopag17 {
+    position: relative;
+    left: -17%;
+    top: -190px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 30px;
+}
+
+.contpag17 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -190px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag17 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -190px;
+    left: -20%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+
+/*pagina 18*/
+
+.contpag18 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -150px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag18 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -150px;
+    left: -20%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+
+/*pagina 19*/
+
+.contpag19 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -180px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    padding-bottom: 3px;
+}
+
+
+/* pagina20*/
+
+.contpag20 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -200px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag20 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -210px;
+    left: -20%;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+
+/*pagina 21*/
+
+.contpag21 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -200px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 20px;
+}
+
+.subcontpag21 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -270px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag21 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -210px;
+    left: -20%;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+
+/* pagian 22*/
+
+.titulopag22 {
+    position: relative;
+    left: -17%;
+    top: -210px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 30px;
+}
+
+.contpag22 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -230px;
+    margin: 2px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag22 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -230px;
+    left: -20%;
+    text-align: left;
+}
+
+
+/*pagina 23*/
+
+.contpag23 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -170px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+
+/* pagina 24*/
+
+.contpag24 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -220px;
+    margin: 1px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+}
+
+.subtitulopag24 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -230px;
+    left: -20%;
+    text-align: left;
+}
+
+
+/*pagina 25*/
+
+.contpag25 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -190px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 10px;
+}
+
+.referencia {
+    color: #0e0e0ee7;
+    text-align: left;
+    position: relative;
+    width: 760px;
+    top: -200px;
+    left: -20%;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 5px;
+}
+
+.titulopag25 {
+    position: relative;
+    left: -17%;
+    top: -190px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 10px;
+}
+
+.subcontpag25 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 630px;
+    top: -190px;
+    margin: 4px;
+    left: -5%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 2px;
+}
+
+.subtitulopag25 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -190px;
+    left: -20%;
+    text-align: left;
+}
+
+.subtitulopag71 {
+    position: relative;
+    font-size: 37px;
+    font-family: 'Buda', cursive;
+    color: #145972;
+    top: -240px;
+    left: -20%;
+    text-align: left;
+}
+
+
+/* generales*/
+
+.titulopag {
+    position: relative;
+    left: 20%;
+    top: -180px;
+    color: #0a4459;
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+}
+
+.contpag46 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -210px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 12px;
+}
+
+.contpag49 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: 360px;
+    margin: 4px;
+    left: -15%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 5px;
+}
+
+.titulopag49 {
+    position: relative;
+    left: -17%;
+    top: -210px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 30px;
+}
+
+.contpag47 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -250px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 5px;
+}
+
+.titulopag47 {
+    position: relative;
+    left: -17%;
+    top: -220px;
+    /* altura*/
+    font-size: 40px;
+    font-family: 'Kufam', cursive;
+    color: #0a4459;
+    padding-bottom: 30px;
+}
+
+video:hover,
+video:focus,
+video:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+video {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.hoja {
+    padding: 0px;
+    height: 750px;
+    width: 805px;
+    background-color: transparent;
+}
+
+.sello {
+    background-color: rgba(255, 0, 0, 0);
+    width: 300px;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    object-position: center center;
+}
+
+.sello2 {
+    width: 450px !important;
+    height: 80px !important;
+    position: absolute;
+    left: 29%;
+    top: 75%;
+    object-position: center center;
+}
+
+.logopag1 {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    height: 20% !important;
+    width: 70% !important;
+}
+
+.notaspag45 {
+    background-color: rgba(238, 8, 8, 0);
+    width: 580px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    position: relative;
+    top: -185px;
+    left: -15%;
+    font-size: 23px;
+    margin: 1px;
+    font-family: 'Buda', cursive;
+}
+
+.videopag45 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: -0%;
+    top: 140px;
+    width: 450px;
+    height: 250px;
+}
+
+.videopag65 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 0%;
+    top: 150px;
+    width: 450px;
+    height: 250px;
+}
+
+.videopag66 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 8%;
+    top: 150px;
+    width: 450px;
+    height: 250px;
+}
+
+.videopag53 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 4%;
+    top: 120px;
+    width: 450px;
+    height: 250px;
+}
+
+.videopag68 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 30%;
+    top: 210px;
+    width: 350px;
+    height: 200px;
+}
+
+.videopag48 {
+    background-color: rgba(10, 68, 89, 0.911);
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    width: 450px;
+    height: 250px;
+}
+
+
+/*
+.flujograma {
+    width: 110% !important;
+    height: 450px !important;
+    position: absolute;
+    top: -70%;
+    left: -20%;
+}
+
+*/
+
+.flujograma {
+    position: absolute;
+    top: -170px;
+    left: -170px;
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.flujograma img {
+    width: 100%;
+    height: auto;
+    object-position: center center;
+}
+
+.flujograma2 {
+    position: absolute;
+    top: -140px;
+    left: -170px;
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.flujograma2 img {
+    width: 100%;
+    height: auto;
+    object-position: center center;
+}
+
+.flujograma3 {
+    position: absolute;
+    top: -90px;
+    left: -170px;
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.flujograma3 img {
+    width: 100%;
+    height: auto;
+    object-position: center center;
+}
+
+.contpag50 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: 320px;
+    margin: 4px;
+    left: -15%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 5px;
+}
+
+.contpag57 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: 260px;
+    margin: 4px;
+    left: -18%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 5px;
+}
+
+.btnAmpliar {
+    position: absolute;
+    top: 390px;
+    width: 60%;
+}
+
+.btnAmpliar a {
+    border: 1px solid #2e518b;
+    /*anchura, estilo y color borde*/
+    padding: 10px;
+    /*espacio alrededor texto*/
+    background-color: #115D78;
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif;
+    /*tipografía texto*/
+    border-radius: 50px;
+    /*bordes redondos*/
+}
+
+.btnAmpliar :hover a {
+    background-color: #5e97ac;
+    color: black;
+}
+
+.recortePapel {
+    position: relative;
+    top: -220px;
+    left: -150px;
+    max-width: 60%;
+    height: auto;
+    object-position: center center;
+}
+
+.imagenpag60 {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    width: 40%;
+    height: 40%;
+    object-position: center center;
+}
+
+.imagenpag12b {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    width: 50%;
+    height: 50%;
+    object-position: center center;
+}
+
+.imagenpag12 {
+    position: absolute;
+    top: 25%;
+    left: -15px;
+    width: 80%;
+    height: 120%;
+    object-position: center center;
+}
+
+.contpag60 {
+    color: rgba(0, 0, 0, 0.904);
+    text-align: justify;
+    position: relative;
+    width: 730px;
+    top: -220px;
+    margin: 4px;
+    left: -17%;
+    font-size: 23px;
+    font-family: 'Buda', cursive;
+    margin-bottom: 20px;
+}
